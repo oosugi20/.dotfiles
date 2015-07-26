@@ -1,0 +1,28 @@
+
+# プロンプト
+autoload colors
+colors
+
+
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "+"
+zstyle ':vcs_info:git:*' unstagedstr "*"
+zstyle ':vcs_info:*' formats ' %{${fg[red]}%}  %b%{${fg[cyan]}%}%c%u%{${fg[red]}%} %{$reset_color%}'
+
+setopt prompt_subst
+precmd () {
+  LANG=en_US.UTF-8 vcs_info
+  if [ -z "${SSH_CONNECTION}" ]; then
+    PROMPT="
+ %{${fg[yellow]}%}%~%{${reset_color}%} ${vcs_info_msg_0_}
+[%n]$ "
+  else
+    PROMPT="
+ %{${fg[yellow]}%}%~%{${reset_color}%} ${vcs_info_msg_0_}
+%{${fg[green]}%}[%n@%m]$%{${reset_color}%} "
+  fi
+}
+
+PROMPT2='[%n]> '
