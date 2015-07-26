@@ -3,6 +3,7 @@
 .vim/bundle/*
 !.vim/bundle/Vundle.vim/
 .vim/undo/
+.netrwhist
 
 .zshdirs
 .zsh_history
