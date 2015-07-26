@@ -46,6 +46,7 @@ Bundle 'editorconfig/editorconfig-vim'
 "Bundle 'fuenor/qfixgrep'
 Bundle 'thinca/vim-qfreplace'
 Bundle 'cocopon/colorswatch.vim'
+Bundle 'heavenshell/vim-jsdoc'
 
 
 filetype plugin indent on     " required!
