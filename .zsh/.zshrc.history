@@ -4,7 +4,7 @@
 # http://webtech-walker.com/archive/2008/12/15101251.html
 
 # 履歴を保存するファイル
-HISTFILE=$HOME/.zsh_history
+HISTFILE=$HOME/.dotfiles/.zsh/.zsh_history
 
 # 履歴の件数
 HISTSIZE=500000
