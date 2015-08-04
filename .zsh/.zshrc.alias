@@ -6,7 +6,7 @@
 setopt complete_aliases
 
 #alias imgopt='((git diff --name-only --diff-filter=ACM && git ls-files --other --exclude-standard) | grep ".*[jpg|png|gif]$" | imageOptim -a -q) && growlnotify -t ImageOptime -m done. -a /Applications/ImageOptim.app'
-alias imgopt='((git diff --name-only --diff-filter=ACM && git ls-files --other --exclude-standard) | grep ".*[jpg|png|gif]$" | imageOptim -q) && growlnotify -t ImageOptime -m done. -a /Applications/ImageOptim.app'
+alias imgopt='((git diff HEAD --name-only --diff-filter=ACM && git ls-files --other --exclude-standard) | grep "\.*\(jpg\|png\|gif\)$" | imageOptim -q) && growlnotify -t ImageOptime -m done. -a /Applications/ImageOptim.app'
 alias shttp='python3 -m http.server'
 alias chrome='open -a "Google Chrome"'
 alias safari='open -a "Safari"'
