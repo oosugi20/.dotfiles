@@ -4,6 +4,10 @@
 # brew
 export PATH=/usr/local/bin:$PATH
 
+# anyenv
+export PATH=~/.anyenv/bin:$PATH
+eval "$(anyenv init -)"
+
 ## MacVim (mvim)
 #export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH
 
