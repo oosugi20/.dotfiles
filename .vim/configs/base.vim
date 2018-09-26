@@ -6,7 +6,7 @@ set termencoding=utf-8
 set encoding=utf-8
 set fileencoding=utf-8
 " 設定するとkaoriyaパッチの日本語判別が動作しない
-"set fileencodings=iso-2022-jp,euc-jp,sjis,cp932,utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,cp932,utf-8
 
 
 "改行コードの自動認識

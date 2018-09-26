@@ -5,9 +5,9 @@
 setopt complete_aliases
 
 # MacVim
-if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
-  alias vim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
-fi
+#if [ -f /Applications/MacVim.app/Contents/MacOS/Vim ]; then
+#  alias vim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
+#fi
 
 
 #alias imgopt='((git diff --name-only --diff-filter=ACM && git ls-files --other --exclude-standard) | grep ".*[jpg|png|gif]$" | imageOptim -a -q) && growlnotify -t ImageOptime -m done. -a /Applications/ImageOptim.app'
