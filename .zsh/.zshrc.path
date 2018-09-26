@@ -1,0 +1,12 @@
+# =================================================================
+# PATH
+
+# brew
+export PATH=/usr/local/bin:$PATH
+
+## MacVim (mvim)
+#export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH
+
+# npmモジュールのコマンドにパスを通す
+#export PATH=/usr/local/share/npm/bin:$PATH
+#export NODE_PATH=`npm root -g`

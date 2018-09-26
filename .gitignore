@@ -1,0 +1,10 @@
+.DS_Store
+
+.vim/bundle/*
+!.vim/bundle/Vundle.vim/
+.vim/undo/
+.netrwhist
+
+.zshdirs
+.zcompdump
+.zsh_history
