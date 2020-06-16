@@ -1,7 +1,7 @@
 syntax on
 colorscheme mine
 
-set columns=97
+set columns=100
 set lines=54
 set transparency=5
 
@@ -14,7 +14,7 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-set guifont=MigMix\ 1M\ Regular\ for\ Powerline:h16
+set guifont=MigMix\ 1M\ Regular\ for\ Powerline:h14
 set lsp=-1
 
 set cmdheight=1

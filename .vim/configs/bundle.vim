@@ -29,11 +29,12 @@ Plugin 'L9'
 " Explore
 Plugin 'FuzzyFinder' " need L9
 "Plugin 'oosugi20/outline.vim'
+"Plugin 'junegunn/fzf.vim'
 
 " Support editing
 "Plugin 'tpope/vim-surround'
 "Plugin 'Align'
-"Plugin 'matchit.zip'
+Plugin 'matchit.zip'
 "Plugin 'heavenshell/vim-jsdoc'
 "Plugin 'oosugi20/vim-pickcssselector'
 Plugin 'thinca/vim-qfreplace'

@@ -17,6 +17,7 @@ set number
 set ruler
 
 set textwidth=100
+let &colorcolumn=join(range(&textwidth,999),",")
 
 " コマンドラインの高さ
 set cmdheight=1
@@ -47,10 +48,20 @@ set nowrap
 
 "不可視文字の表示
 set list
-set listchars=tab:\|\ ,eol:↵
+set listchars=tab:\|\-,eol:↵
 
 "スクロール余白
 set scrolloff=3
 
 "横スクロールを出す
 "set guioptions+=b
+
+
+if has('vim_starting')
+    " 挿入モード時に非点滅の縦棒タイプのカーソル
+    let &t_SI .= "\e[6 q"
+    " ノーマルモード時に非点滅のブロックタイプのカーソル
+    let &t_EI .= "\e[2 q"
+    " 置換モード時に非点滅の下線タイプのカーソル
+    let &t_SR .= "\e[4 q"
+endif

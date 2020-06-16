@@ -1,24 +1,43 @@
 
+"set background=dark
+"hi SpecialKey guifg=Blue
+"hi MoreMsg guifg=Green
+"hi Visual guifg=NONE guibg=NONE
+"hi Folded ctermbg=4 guibg=Blue
+"hi FoldColumn ctermbg=7
+"hi DiffAdd guibg=Blue
+"hi DiffChange guibg=Magenta
+"hi DiffDelete guibg=Cyan
+"hi Normal guifg=Gray guibg=Black
+"hi Cursor guibg=White
+"hi lCursor guibg=White
+"hi Comment guifg=Cyan
+"hi Constant guifg=Magenta
+"hi Special guifg=Red
+"hi Identifier guifg=Cyan
+"hi Statement guifg=Yellow
+"hi PreProc guifg=Blue
+"hi Type guifg=Green
+"hi Underlined guifg=Blue
+"hi Todo guifg=Black
+"
+set termguicolors
+syntax on
+colorscheme mine
+
 set undodir=~/.vim/undo
-
-
-set termencoding=utf-8
-set encoding=utf-8
-set fileencoding=utf-8
-" 設定するとkaoriyaパッチの日本語判別が動作しない
-set fileencodings=iso-2022-jp,euc-jp,sjis,cp932,utf-8
-
-
-"改行コードの自動認識
-set fileformats=unix,dos,mac
-
-" textwidthの文字数で自動改行させない
-set formatoptions=q
 
 
 augroup MyAutoCmd
   autocmd!
 augroup END
+
+
+" textwidthの文字数で自動改行させない
+set formatoptions=q
+
+" Kaoriya版対応
+autocmd MyAutoCmd BufEnter * setlocal formatoptions=q
 
 
 "ファイルを開いたときにディレクト自動移動

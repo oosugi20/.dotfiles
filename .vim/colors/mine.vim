@@ -114,7 +114,7 @@ hi SpecialKey      guifg=#202020
 hi Cursor          guifg=#333333 guibg=#8C8075
 hi CursorLine      cterm=NONE guifg=NONE    guibg=#423930 gui=none
 hi CursorColumn                  guibg=#2A2722
-hi ColorColumn                   guibg=#232526
+hi ColorColumn                   guibg=#2D2822
 
 hi LineNr          guifg=#505050 guibg=#201C17
 hi CursorLineNr    guifg=#6F6F6F guibg=#362F27

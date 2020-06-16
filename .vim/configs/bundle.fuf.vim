@@ -11,6 +11,7 @@ nnoremap <silent> <C-f><Right> :FufLine!<CR>
 nnoremap <silent> <C-f><Down> :FufJumpList<CR>
 nnoremap <silent> <C-f><C-m> :FufMruFile<CR>
 nnoremap <silent> <C-f><C-b> :FufBuffer<CR>
+nnoremap <silent> <C-f><C-v> :FufBookmarkDir<CR>
 
 
 let g:fuf_keyOpenSplit = '<D-CR>'
